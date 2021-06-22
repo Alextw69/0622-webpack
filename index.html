@@ -4,17 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-      .box{
-        width: 100px;
-        height: 100px;
-        background-color: rgb(148, 198, 31); 
-         }
-  </style>
+  <link rel="stylesheet" href="dist/style.css">
+  <!-- <title><%= htmlWebpackPlugin.options.title%></title> -->
 </head>
 <body>
-    <div class="box"></div>
+    <header>
+      <h1>webpack</h1>
+      <div class="box"></div>
+    </header>
     <ul>
       <li>npm init -y --> package.json</li>
       <li>npm install --save-dev webpack@4.43.0</li>
@@ -27,8 +24,25 @@
       <li>打包 webpack scripts.js , 就可以 Go live</li>
       <li>npm install gsap@2.1.3 (安裝函式庫)</li>
       <li>在 scripts.js 下 , import $ from 'gsap'; 就可以使用 gsap</li>
+      <li>npm install --save-dev css-loader style-loader (引入module:)</li>
       <li>webpack js/scripts.js -w  (監看檔案)</li>
+      <li>npm uninstall sass-loader</li>
+      <li>npm install sass-loader node-sass --save-dev</li>
+      <li>note : sass loader 降轉 "sass-loader": "^10.1.1", 才能執行</li>
+      <li> node-sass 也要降轉到5.0.0的版本 "node-sass": "^5.0.0"</li>
+      <li>npm uninstall node-sass</li>
+      <li>npm install node-sass@5.0.0 --save-dev</li>
+      <li>npm install sass-loader@10.1.1 --save-dev</li>
+      <li>npm install --save-dev html-webpack-plugin@4.5.0</li>
+      <li>npm install webpack-dev-server -g
+      </li>
+      <li>指令 webpack-dev-server</li>
+      <li></li>
+
     </ul>
-    <script src="dist/main.js"></script>
+    <footer>
+        <h1>webpack</h1>
+    </footer>
+    <script src="dist/boudle.js"></script>
 </body>
 </html>
