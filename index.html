@@ -6,27 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-      body{
+      .box{
         width: 100px;
         height: 100px;
-        background-color: yellow;
+        background-color: rgb(148, 198, 31); 
+         }
   </style>
 </head>
 <body>
+    <div class="box"></div>
     <ul>
       <li>npm init -y --> package.json</li>
       <li>npm install --save-dev webpack@4.43.0</li>
       <li>建立專案</li>
       <li>建立 index.html </li>
+      <li>建立 webpack.config.js (引入module.exports=) ,  (加入"入口文件") , 再打包一次 產生boudle.js檔</li>
       <li>建立 scripts.js 及 .gitignore</li>
       <li>npm install jquery (安裝函式庫)</li>
       <li>在 scripts.js 下 , import $ from 'jquery'; 就可以使用 jquery</li>
       <li>打包 webpack scripts.js , 就可以 Go live</li>
-      <li>npm install gsap@2.1.3</li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>npm install gsap@2.1.3 (安裝函式庫)</li>
+      <li>在 scripts.js 下 , import $ from 'gsap'; 就可以使用 gsap</li>
+      <li>webpack js/scripts.js -w  (監看檔案)</li>
     </ul>
     <script src="dist/main.js"></script>
 </body>

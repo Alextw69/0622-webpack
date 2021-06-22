@@ -3,9 +3,10 @@ import TweenMax from 'gsap';
 
 $('body').css('background-color','green');
 
+
 TweenMax.to('.box',2,{
   x : 400,
-  roration : 100,
+  roration : 180,
   backgroundColor : 'white',
   borderRadius : '50%'
 })
