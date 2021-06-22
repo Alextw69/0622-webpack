@@ -1,4 +1,4 @@
-import $ from 'jquery'; // jquery 
+// import $ from 'jquery'; // jquery 
 import TweenMax from 'gsap'; // gsap
 import '../sass/style.scss';
 // import '../css/header.css';
