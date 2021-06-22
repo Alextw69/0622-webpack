@@ -1,10 +1,13 @@
 import $ from 'jquery';
+import TweenMax from 'gsap';
 
 $('body').css('background-color','green');
 
-TweenMax.to('.box',1,{
+TweenMax.to('.box',2,{
   x : 400,
-  roration : 100
+  roration : 100,
+  backgroundColor : 'white',
+  borderRadius : '50%'
 })
 
 let age = 26;
