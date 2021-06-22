@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "瀏覽器 " : "webpack-dev-server",
-    "開發用"  : "webpack -d",
-    "上線用"  : "webpack -p"
+    "瀏覽器 ": "webpack-dev-server",
+    "開發用": "webpack -d",
+    "上線用": "webpack -p"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.6",
     "html-webpack-plugin": "^4.5.0",
     "mini-css-extract-plugin": "^1.6.0",

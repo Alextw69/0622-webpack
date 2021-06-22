@@ -1,6 +1,9 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const {
+  CleanWebpackPlugin
+} = require('clean-webpack-plugin');
 
 
 
@@ -34,6 +37,8 @@ module.exports = {
 
     },             // 處裡對應模組
     plugins: [
+        //清理舊的檔案
+        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: "./[name].css" // 產生出來的css
         }),
@@ -46,6 +51,7 @@ module.exports = {
             // 目的地
             title: '首頁'
         })
+        
     ], // 對應的插件
     devServer: {
       contentBase: './dist',
