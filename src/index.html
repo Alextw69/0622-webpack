@@ -5,21 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="dist/style.css">
-  <!-- <title><%= htmlWebpackPlugin.options.title%></title> -->
+  <title><%= htmlWebpackPlugin.options.title%></title>
 </head>
 <body>
     <header>
       <nav>
-          <h1>logo</h1>
+          <!-- <h1>logo</h1> -->
       </nav>
-      <h1>webpack</h1>
+      <h1 id="app">
+        {{message}}
+       </h1>
       <div class="box"></div>
     </header>
     <ul>
       <li>npm init -y --> package.json</li>
       <li>npm install --save-dev webpack@4.43.0</li>
       <li>建立專案</li>
-      <li>建立 index.html </li>
+      <li>建立 index.html  .gitignore( 1.node_modules  2.package-lock.json  3.dist)</li>
       <li>建立 webpack.config.js (引入module.exports=) ,  (加入"入口文件") , 再打包一次 產生boudle.js檔</li>
       <li>建立 scripts.js 及 .gitignore</li>
       <li>npm install jquery (安裝函式庫)</li>
@@ -41,7 +43,7 @@
       <li>指令 webpack-dev-server</li>
       <li>npm install clean-webpack-plugin --save-dev  (清除建構檔案)</li>
       <li>npm install --save-dev babel-loader @babel/core @babel/preset-env (babel es6 -> es5)</li>
-      <li></li>
+      <li>npm install html-webpack-partials-plugin --save-dev</li>
       <li></li>
       <li></li>
 
